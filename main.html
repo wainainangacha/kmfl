@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      />
+     <title>KMFL</title>
+     <style>
+ /* nav styles */
+
+ .body{
+    background-color: aliceblue;
+ }     
+ .nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: var(--font-semi);
+  background-color: #1cc6bc;
+}
+
+.frame{
+    margin-top: 3rem;
+}
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: var(--second-color);
+    transition: .5s;
+  }
+}
+
+.nav__item {
+  display: inline;  
+  /* margin-bottom: var(--mb-3); */
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  line-height: normal;
+  list-style: none;
+  
+  
+}
+
+.nav__link {
+  position: relative;
+  color:black;
+  list-style-type: none;
+}
+ul{
+ list-style: none;
+}
+ li {
+  position: relative;
+  display: inline;
+  color:black;
+  list-style-type: none;
+ 
+}
+
+.nav__link:hover {
+  position: relative;
+}
+
+.nav__link:hover::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 0.18rem;
+  left: 0;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
+.nav__logo {
+  color: var(--second-color);
+}
+
+.nav__toggle {
+  color: var(--second-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo__img{
+   width: 160px;
+   height: 70px;
+   cursor: pointer;
+   /* align-items: flex-start; */
+
+}
+/* footer section start */
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body{
+  font-size:14px;
+  background-color: #bae9fc;
+    max-width:1920px;
+    margin:0 auto;
+  overflow-x:hidden;
+  font-family: poppins;
+  
+
+}
+#footer{
+  background: #f7f7f7;
+  padding: 2rem;
+  /* padding-top: 5rem; */
+  padding-top: 2rem;
+    padding-bottom: 80px;
+  background-image: url(https://arena.km.ua/wp-content/uploads/3538533.jpg);
+}
+#footer2{
+  background: #f7f7f7;
+    padding: 3rem;
+    margin-top: 0px;
+  /* padding-top: 5rem; */
+  padding-top: 7rem;
+    padding-bottom: 80px;
+  background-image: url(../images/cards/v748-toon-111.png);
+}
+
+.social-links h2{
+  padding-bottom: 15px;
+  font-size: 20px;
+    font-weight: 600;
+}
+.social-links img{
+  padding-bottom: 25px;
+}
+.social-icons{
+  display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  color: #777777;
+}
+.social-icons a{
+  color: #777777;
+}
+.social-icons a:hover{
+  color: #000;
+}
+.social-icons a i{
+  box-shadow: rgb(0 0 0 / 8%) 0px 4px 12px;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 3px;
+    color: #82074a;
+  font-size: 16px;
+  margin-right: 12px;
+}
+li{
+  list-style: none;
+}
+.useful-link h2{
+  padding-bottom: 15px;
+  font-size: 20px;
+    font-weight: 600;
+}
+.useful-link img{
+  padding-bottom: 15px;
+}
+.use-links{
+  line-height: 32px;
+}
+.use-links li i{
+  font-size: 14px;
+    padding-right: 8px;
+    color: #898989;
+}
+.use-links li a{
+  color: #303030;
+    font-size: 15px;
+    font-weight: 500;
+  color: #777777;
+}
+.use-links li a:hover{
+  color: #000;
+}
+
+.copy-right-sec{
+  padding: 1.8rem;
+    background: #82074a;
+    color: #fff;
+    text-align: center;
+}
+.copy-right-sec a{
+  color: #fcd462;
+    font-weight: 500;
+}
+a{
+  text-decoration:none;
+}
+h2{
+    text-align: right;
+    margin-top: .3rem;
+    font-size: 32px;
+}
+p{
+    text-align: right;
+}
+
+/* footer section end */
+
+a{
+    color:#82074a;
+}
+a:hover{
+    color: white;
+}
+
+
+     </style>
+    </head>
+
+<body> 
+      <nav class="nav">
+    <div>
+        <div class="logo__img">
+            
+            <a href="https://soma-dharc.jkuat.ac.ke/" >
+              <img class="logo__img" src="logo.png"/>
+            </a>
+        </div>
+    </div>
+    <div class="title">
+        <h2>HEALTH FACILITIES IN KENYA</h2>
+    </div>
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+            
+            <li class="nav__item"><a href="#" class="nav__link" style="margin-right: 12px;">Care Centers</a></li>
+            <li class="nav__item"><a href="#footer" class="nav__link active">Data Sources</a></li>
+        </ul>
+    </div>
+   </nav>
+      
+ 
+    
+    <main>
+      <!-- <iframe style="background: #F1F5F4;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="100%" height="480"
+        src="https://charts.mongodb.com/charts-project-0-ochvb/embed/dashboards?id=63886085-a41f-4d2b-87d5-1aac743b5be6&theme=light&autoRefresh=true&maxDataAge=3600&showTitleAndDesc=false&scalingWidth=fixed&scalingHeight=fixed"></iframe>
+       -->
+       <div class="frame">
+        <iframe src="https://www.arcgis.com/apps/instant/basic/index.html?appid=81c1728eb4ab4afa8718d1226234cc74&locale=en-us" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen>iFrames are not supported on this page.</iframe>
+       </div>
+       
+    </main>
+
+       
+  <!-- footer section start -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="index.html">
+                <img src="Logo.png" alt="" class="img-fluid logo-footer"></a>
+                      <div class="footer-about">
+                        <h2>Data Sources</h2>
+                        <p>
+                            Data was sourced online from<a href = https://data.humdata.org/showcase/list-of-health-facilities-in-kenya >The Humanitarian Data Exchange</a>  (HDX) managed by OCHA's <br/>
+                            Centre for Humanitarian Data,
+                             <a href="https://www.arcgis.com/home/user.html?user=GeoDevOps ">Geodevops</a> an Esri licensed opensource GIS data
+                            provider, <br/>
+                            <a href="http://kmhfl.health.go.ke/#/home">The KENYA MASTER HEALTH FACILITY LIST</a> published by the ministry of health <br/> and the Kenya Master Health Facility List, 2020 - Datasets -<a href="https://africaopendata.org/dataset/health-facilities-in-kenya">openAFRICA </a> 
+                         </p>
+                      </div>
+
+          </div>
+                    <div class="col-md-3">
+                        <div class="social-links">
+              <h3>Follow Us</h3>
+              
+              <div class="social-icons">
+                <li><a href="https://web.facebook.com/people/Digital-Health-Applied-Research-Center-JKUAT/100060285099131/"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="https://twitter.com/JkuatDharc"><i class="fa-brands fa-twitter"></i> twitter</a></li>
+                <li><a href="https://mail.google.com/mail/u/0/"><i class="fa-solid fa-envelope"></i> Email</a>:dharc@jkuat.ac.ke</li>
+              </div>
+            </div>
+     </div>
+                  
+        </div>
+      </div>
+
+    </footer>
+    <!-- footer section end -->
+    <!-- footer copy right section start -->
+    <section id="copy-right">
+      <div class="copy-right-sec"><i class="fa-solid fa-copyright"></i>  
+        Dharc|All rights reserved, powered by <a href="#">GisScape</a> 
+
+      </div>
+
+    </section>
+    <!-- footer copy right section end -->
+            
+    </body>
+    
+    </section>
+      
+    </footer>
+</html> 
